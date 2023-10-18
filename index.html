@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <title>PGI Orla</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="topbar">
+        <div class="left">
+          <h1>Plano de Gestão Integrada da Orla de Maceió</h1>
+        </div>
+        <div class="right"></div>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="menu" id="menu">
+        <a href="#programa-orla">O Programa Orla</a>
+        <a href="#programacao">Programação</a>
+        <a href="#inscricao">Inscrição</a>
+        <a href="#download">Download de Instrumentos</a>
+        <a href="#denuncias">Denúncias</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#galeria">Galeria</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="banner">
+        <div class="carrossel"></div>
+        <div class="textos">
+          <h2>CONHEÇA O PROGRAMA ORLA MACEIÓ</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
+            porro quod quisquam aperiam quos, explicabo eos assumenda
+            praesentium ex placeat. Officia nam iusto architecto officiis magni
+            nulla impedit iste ab!
+          </p>
+        </div>
+        <div class="botao"></div>
+      </div>
+      <div class="timeline"></div>
+    </div>
+    <div class="footer"></div>
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu");
+      const menu = document.getElementById("menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
