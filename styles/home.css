@@ -93,6 +93,8 @@ body{
     align-items: center;
     justify-content: center;
     align-content: center;
+    padding-bottom: 40px;
+
 }
 
 .banner .botoes{
@@ -112,6 +114,11 @@ body{
     border-radius: 50px;
     margin: 10px;
     font-size: 20px;
+}
+
+.banner .textos{
+    padding-top: 40px;
+    width: 100%;
 }
 
 }
