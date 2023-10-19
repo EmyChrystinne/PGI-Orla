@@ -4,7 +4,7 @@ body{
     font-family: 'Source Sans 3', sans-serif;
 }
 
-.banner{
+/* .banner{
     display: flex;
     background-image: url("../img/23-07-23\ -\ Praia\ de\ Ponta\ Verde\ -\ Turistas\ -\ Ciclistas\ -\ Banhistas\ -\ Orla\ -\ Rua\ fechada\ -\ Totem\ Eu\ Amo\ Maceió\ -\ Cavalo\ Marinho\ -\ SEMTUR\ -\ fotos\ Jonathan\ Lins-8\ -\ Copia.jpg");
     background-size: cover; 
@@ -12,7 +12,7 @@ body{
     background-position: center center;
     width: 100%;
     height: 600px;
-}
+} */
 
 .banner h2,p{
     margin: 0;
