@@ -1,0 +1,174 @@
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    background: #1c70b6;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-footer {
+    padding-top: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  
+  .logos {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 20px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1920px;
+  }
+  
+  .logos div {
+    display: flex;
+    width: 25%;
+  max-height: 114px;
+    height: auto;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  
+  .logos img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* Garante que as imagens mantenham suas proporções e cubram completamente o contêiner */
+  }
+  
+  .logos a{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* 
+    
+    .iplan {
+      width: 25%;
+      height: auto;
+      overflow: hidden;
+    }
+    
+    .iplan img {
+      width: 100%;
+      height: 80%;
+    }
+    
+    .prefeitura {
+      width: 25%;
+      height: auto;
+      overflow: hidden;
+    }
+    
+    .prefeitura img {
+      width: 100%;
+      height: 100%;
+    }
+  
+  
+    .bid{
+      width: 25%;
+      height: auto;
+      overflow: hidden;
+    }
+  
+    .bid img{
+      width: auto;
+      height: 100%;
+    }
+  
+    .govtech{
+      width: 25%;
+      height: auto;
+      overflow: hidden;
+    }
+  
+    .govtech img{
+      width: 100%;
+      height: 100%;
+    } */
+    
+    .nosso-endereco {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 0;
+    }
+    
+    .nosso-endereco{
+      color: #ffffff;
+      font-size: 16px;
+    }
+    
+    .footer-title h5{
+      color: #ffffff;
+      font-size: 16px;
+    }
+    
+    .endereco {
+      margin-bottom: 20px;
+    }
+    
+    
+    
+    .endereco p {
+      margin-top: 0px;
+    }
+    
+    .links {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .links .footer-title h5{
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+    
+    .list-links{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: space-between;
+      color: #ffffff;
+      padding-bottom: 20px;
+    }
+    
+    .list-links ul{
+      text-align: center;
+      padding: 0;
+    }
+    
+    .list-links li{
+      list-style-type: none;
+      list-style: none;
+      padding-bottom: 10px;
+    
+    }
+    
+    .list-links a{
+      color: #ffffff;
+    }
