@@ -94,7 +94,7 @@ body {
 }
 
 .banner a:hover {
-  background-color: #573201;
+  background-color: #00a099;
   transition: 0.3s;
 }
 
@@ -247,6 +247,22 @@ p {
     top: 1410px;
   }
 
+  .linha-vertical{
+    display: flex;
+    width: 0px;
+    height: 400px;
+    z-index: 2;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    left: 880px;
+    bottom: -400px;
+    border: #00a099 dashed 2px;
+  }
+
 @media (max-width: 768px) {
   .banner {
     flex-direction: column;
@@ -289,7 +305,7 @@ p {
   }
 
   .circulos{
-    width: 90%;
+    width: 100%;
     gap: 20px;
   }
 
@@ -299,8 +315,8 @@ p {
   }
 
   #Active-Circle {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
   }
 
 
@@ -343,6 +359,10 @@ p {
 .linha-horizontal{
     height: 5px;
     top: 1416px;
+}
+
+.linha-vertical{
+    display: none;
 }
 
 }
