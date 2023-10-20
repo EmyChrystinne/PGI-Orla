@@ -1,108 +1,237 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans 3', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans 3", sans-serif;
 }
 
-.content{
+@font-face {
+  font-family: "Bronkoh";
+  src: url("../fonts/Bronkoh-Heavy.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  width: 100%;
+  height: 590px;
+  display: flex;
+  /* background-image: url(../img/1.jpg); */
+  background-size: cover;
+  background-position: center;
+  /* background-color: aquamarine; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.banner .textos {
+  z-index: 100;
+  display: flex;
+  /* background-color: #070842; */
+  width: 70%;
+  height: 90%;
+  color: white;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.banner .textos h2 {
+  width: 300px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 100px;
+  margin-bottom: 0;
+  line-height: 45px;
+}
+
+.banner .textos p {
+  width: 300px;
+  font-size: 18px;
+  margin-left: 100px;
+  margin-top: 10px;
+  line-height: 30px;
+}
+
+.banner .botoes {
+  height: 90%;
+  z-index: 100;
+  display: flex;
+  position: relative;
+  width: 30%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  top: 90px;
+}
+
+.banner a {
+  width: 300px;
+  height: 100px;
+  background-color: #f19100;
+  border-radius: 50px 0 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 38px;
+}
+
+.banner a:hover {
+  background-color: #573201;
+  transition: 0.3s;
+}
+
+.cronograma {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  flex-direction: column;
+  background-color: white;
+  background-image: url(../img/Ativo\ 1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.cronograma .textos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.cronograma .textos h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.cronograma .textos .titulo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.cronograma .textos .descricao {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: nowrap;
+  color: #666666;
+  gap: 10px;
+  margin-left: 200px;
+}
+
+.cronograma .textos h2 {
+  width: 80px;
+  font-family: "Bronkoh", sans-serif;
+  font-size: 70px;
+  color: #00a099;
+  margin-left: 130px;
+}
+
+.descricao h3 {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.descricao p {
+  width: 400px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.timeline {
+    gap: 10px;
     display: flex;
-    width: 100%;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
-    justify-content: center;
     align-items: center;
-}
-
-.banner{
-    width: 100%;
-    height: 590px;
-    display: flex;
-    /* background-image: url(../img/1.jpg); */
-    background-size: cover;
-    background-position: center;
-    /* background-color: aquamarine; */
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
 }
 
-.banner .textos{
-    z-index: 100;
+.circulos{
+    gap: 40px;
     display: flex;
-    /* background-color: #070842; */
-    width: 70%;
-    height: 90%;
-    color: white;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.textos h2{
-    width: 300px;
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 100px;
-    margin-bottom: 0;
-    line-height: 45px;
-}
-
-.textos p{
-
-    width: 300px;
-    font-size: 18px;
-    margin-left: 100px;
-    margin-top: 10px;
-    line-height: 30px;
-}
-
-.banner .botoes{
-    height: 90%;
-    z-index: 100;
-    display: flex;
-    position: relative;
-    width: 30%;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: flex-start;
-    top: 90px;
-
-}
-
-.banner a{
-    width: 300px;
-    height: 100px;
-    background-color: #f19100;
-    border-radius: 50px 0 0 50px;
-    display: flex;
-    justify-content: center;
+    align-content: center;
     align-items: center;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 38px;
+    justify-content: space-around;
 }
 
-.banner a:hover{
-    background-color: #573201;
-    transition: 0.3s;
+.circle {
+  display: flex;
+  background: #00a099;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
+#Active-Circle {
+  width: 200px;
+  height: 200px;
+}
 
-.cronograma{
-    display: flex;
+#Active-Circle:hover {
+    background: #f19100;
+  }
+
+  .timeline .years{
     width: 100%;
-    height: 800px;
-    background-color:white;
-}
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50%;
+  }
+
+  .years p{
+    width: 80px;
+    font-family: "Bronkoh", sans-serif;
+    font-size: 30px;
+    color: #00a099;
+  }
 
 @media (max-width: 768px) {
-.banner{
+  .banner {
     flex-direction: column;
     height: 100%;
     width: 100%;
@@ -111,10 +240,9 @@ body{
     align-content: center;
     padding-bottom: 40px;
     background-position: left;
+  }
 
-}
-
-.banner .botoes{
+  .banner .botoes {
     position: relative;
     top: 0;
     width: 100%;
@@ -123,19 +251,75 @@ body{
     justify-content: center;
     align-items: center;
     align-content: center;
-}
+  }
 
-.banner .botoes a{
+  .banner .botoes a {
     width: 300px;
     height: 60px;
     border-radius: 50px;
     margin: 10px;
     font-size: 20px;
-}
+  }
 
-.banner .textos{
+  .banner .textos {
     padding-top: 40px;
     width: 100%;
-}
+  }
 
+  .timeline {
+    width: 90%;
+    gap: 20px;
+  }
+
+  .circulos{
+    width: 90%;
+    gap: 20px;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  #Active-Circle {
+    width: 50px;
+    height: 50px;
+  }
+
+
+
+  .cronograma .textos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding-bottom: 100px;
+    flex-direction: column;
+  }
+
+  .cronograma .textos h2 {
+    margin-left: 0;
+  }
+
+  .cronograma .textos .titulo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .cronograma .textos .descricao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin-left: 0;
+  }
 }
