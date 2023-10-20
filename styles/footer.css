@@ -46,7 +46,7 @@
   .logos img {
     width: 100%;
     height: 100%;
-    object-fit: fill; /* Garante que as imagens mantenham suas proporções e cubram completamente o contêiner */
+    object-fit: fill; 
   }
   
   .logos a{
@@ -58,53 +58,6 @@
     align-items: center;
   }
 
-  /* 
-    
-    .iplan {
-      width: 25%;
-      height: auto;
-      overflow: hidden;
-    }
-    
-    .iplan img {
-      width: 100%;
-      height: 80%;
-    }
-    
-    .prefeitura {
-      width: 25%;
-      height: auto;
-      overflow: hidden;
-    }
-    
-    .prefeitura img {
-      width: 100%;
-      height: 100%;
-    }
-  
-  
-    .bid{
-      width: 25%;
-      height: auto;
-      overflow: hidden;
-    }
-  
-    .bid img{
-      width: auto;
-      height: 100%;
-    }
-  
-    .govtech{
-      width: 25%;
-      height: auto;
-      overflow: hidden;
-    }
-  
-    .govtech img{
-      width: 100%;
-      height: 100%;
-    } */
-    
     .nosso-endereco {
       display: flex;
       flex-direction: column;
@@ -171,4 +124,21 @@
     
     .list-links a{
       color: #ffffff;
+    }
+
+    @media (max-width: 768px) { 
+      .logos{
+        width: 100%;
+        height: auto;
+      }
+
+      .logos div{
+        width: 100%;
+        height: 200px;
+      }
+
+      .logos img{
+        width: 100%;
+        height: 50%;
+      }
     }
