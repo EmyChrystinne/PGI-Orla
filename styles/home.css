@@ -139,7 +139,8 @@ p {
   align-items: center;
   align-content: center;
   flex-wrap: nowrap;
-}
+  position: relative;
+  top: 210px;}
 
 .cronograma .textos .descricao {
   display: flex;
@@ -153,6 +154,8 @@ p {
   color: #666666;
   gap: 10px;
   margin-left: 200px;
+  position: relative;
+  top: 210px;
 }
 
 .cronograma .textos h2 {
@@ -206,6 +209,18 @@ p {
   height: 100px;
   z-index: 3;
 }
+
+.center-line{
+  display: flex;
+  position: relative;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 203px;
+
+}
+
 #linha-horizontal {
   display: flex;
   width: 80%;
@@ -221,7 +236,7 @@ p {
   background-position: center;
 }
 
-#Active-Circle:hover {
+  #Active-Circle:hover {
     background-color: #f19100;
   }
 
@@ -234,6 +249,8 @@ p {
     justify-content: space-between;
     align-items: center;
     gap: 50%;
+    position: relative;
+    bottom: 260px;
   }
 
   .years p{
@@ -258,14 +275,14 @@ p {
     width: 0px;
     height: 400px;
     z-index: 2;
-    position: absolute;
+    /* position: absolute;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     align-items: center;
     left: 668px;
-    bottom: -600px;
+    bottom: -600px; */
     border: #00a099 dashed 2px;
   }
 
@@ -310,6 +327,11 @@ p {
     gap: 20px;
   }
 
+
+.timeline .years{
+  bottom: 0;
+}
+
   .circulos{
     width: 100%;
     gap: 20px;
@@ -323,6 +345,10 @@ p {
   #Active-Circle {
     width: 70px;
     height: 70px;
+  }
+
+  .center-line{
+    bottom: 0;
   }
 
 
@@ -349,6 +375,8 @@ p {
     align-items: flex-start;
     align-content: center;
     flex-wrap: nowrap;
+    position:relative;
+    top: 0;
   }
 
   .cronograma .textos .descricao {
@@ -360,6 +388,8 @@ p {
     align-content: center;
     flex-wrap: nowrap;
     margin-left: 0;
+    position:relative;
+    top: 0;
   }
 
 .linha-horizontal{
