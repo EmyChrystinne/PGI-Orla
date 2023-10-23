@@ -198,12 +198,18 @@ p {
 }
 
 .circle {
+  z-index: 1;
   display: flex;
   background: #00a099;
   border-radius: 50%;
   width: 100px;
   height: 100px;
   z-index: 3;
+}
+#linha-horizontal {
+  display: flex;
+  width: 80%;
+  border: 10px solid #31c838;
 }
 
 #Active-Circle {
@@ -258,8 +264,8 @@ p {
     align-content: center;
     justify-content: center;
     align-items: center;
-    left: 880px;
-    bottom: -400px;
+    left: 668px;
+    bottom: -600px;
     border: #00a099 dashed 2px;
   }
 
