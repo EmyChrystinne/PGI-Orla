@@ -65,3 +65,18 @@ body {
     height: 85%;
     color: rgb(252, 251, 251);
   }
+
+  .botao-download:hover{
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px){
+    .content{
+      flex-direction: column;
+    }
+    .botoes-download{
+      flex-direction: column;
+    }
+  }
