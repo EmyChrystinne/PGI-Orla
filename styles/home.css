@@ -286,6 +286,11 @@ p {
     border: #00a099 dashed 2px;
   }
 
+/* @media (max-width: 1463px) {
+
+  
+} */
+
 @media (max-width: 768px) {
   .banner {
     flex-direction: column;
