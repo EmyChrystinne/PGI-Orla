@@ -39,7 +39,7 @@ body {
   align-items: center;
   align-content: center;
   flex-wrap: nowrap;
-  gap: 10px;
+  gap: 40px;
 }
 
 .left h1{
