@@ -16,7 +16,7 @@ body {
   
   .content{
     width: 90%;
-    height: 50vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -24,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 5%;
+    padding: 40px 0px;
   }
   .botoes-download{
     gap: 40px;

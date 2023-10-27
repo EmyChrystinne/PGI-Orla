@@ -90,7 +90,8 @@ body {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 28px;
+  text-align: center;
 }
 
 .banner a:hover {
