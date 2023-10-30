@@ -57,8 +57,8 @@
       <div class="bolinhas" id="bolinha7"></div>
       <div class="bolinhas" id="bolinha8"></div>
       <div class="bolinhas" id="bolinha9"></div>
-  </div>
-  <div id="texto"></div>
+    </div>
+    <div id="texto"></div>
     <!-- <div class="left-content">
     <div class="timeline">
       <div class="circulos">
@@ -73,18 +73,18 @@
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div> -->
-        <!-- <div class="linha-horizontal"></div> -->
-      </div>
-      
-    </div>
-    </div>
-    <div class="right-content">
-      
+    <!-- <div class="linha-horizontal"></div> -->
+  </div>
+
+  </div>
+  </div>
+  <div class="right-content">
 
 
 
 
-    </div>
+
+  </div>
   </div>
   <div class="footer">
     <div class="content-footer">
@@ -162,25 +162,35 @@
     });
 
     const bolinhas = document.querySelectorAll('.bolinhas');
-const texto = document.getElementById('texto');
+    const texto = document.getElementById('texto');
 
-const textos = [
-    '<p>mussum ipsum cacilds \n vidis litro abertis mussum ipsMussum Ipsum, cacilds vidis litro abertis.\n Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.',
-    'mussum ipsum cacilds vidis litro abertis2 jdbfhjg wrngblhsbvljhsblvhjsfbvuhbrlvhjbrlvhbrlhvbrovbrouvbrlhvbrohvbrouvbro',
-    'mussum ipsum cacilds vidis litro abertis3 mussum ipsum cacilds vidis litro abertis2 mussum ipsum cacilds vidis litro abertis mussum ipsMussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.',
-    'mussum ipsum cacilds vidis litro abertis4 mussum ipsum cacilds vidis litro abertis3 mussum ipsum cacilds vidis litro abertis2 mussum ipsum cacilds vidis litro abertis mussum ipsMussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.',
-    'mussum ipsum cacilds vidis litro abertis5',
-    'musuum ipsum cacilds vidis litro abertis6',
-    'mussum ipsum cacilds vidis litro abertis7',
-    'mussuum ipsum cacilds vidis litro abertis8',
-    'musuum ipsum cacilds vidis litro abertis9'
-];
+    const textos = [
+      '<p>mussum ipsum cacilds \n vidis litro abertis mussum ipsMussum Ipsum, cacilds vidis litro abertis.\n Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.',
+      'mussum ipsum cacilds vidis litro abertis2 jdbfhjg wrngblhsbvljhsblvhjsfbvuhbrlvhjbrlvhbrlhvbrovbrouvbrlhvbrohvbrouvbro',
+      'mussum ipsum cacilds vidis litro abertis3 mussum ipsum cacilds vidis litro abertis2 mussum ipsum cacilds vidis litro abertis mussum ipsMussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.',
+      'mussum ipsum cacilds vidis litro abertis4 mussum ipsum cacilds vidis litro abertis3 mussum ipsum cacilds vidis litro abertis2 mussum ipsum cacilds vidis litro abertis mussum ipsMussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.',
+      'mussum ipsum cacilds vidis litro abertis5',
+      'musuum ipsum cacilds vidis litro abertis6',
+      'mussum ipsum cacilds vidis litro abertis7',
+      'mussuum ipsum cacilds vidis litro abertis8',
+      'musuum ipsum cacilds vidis litro abertis9'
+    ];
 
-bolinhas.forEach((bolinha, index) => {
-    bolinha.addEventListener('click', () => {
+    bolinhas.forEach((bolinha, index) => {
+      bolinha.addEventListener('click', () => {
         texto.textContent = textos[index];
+      });
     });
-});
+    bolinhas.addEventListener('click', () => {
+      
+      bolinhas.forEach((bolinhas) => {
+        
+      bolinhas.classList.remove('large'); // Remove a classe 'large' de todas as bolinhas
+      });
+
+      bolinhas.classList.add('large'); // Adiciona a classe 'large' à bolinha clicada
+    });
+
 
   </script>
 </body>
