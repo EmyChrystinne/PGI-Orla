@@ -12,236 +12,137 @@ body {
   font-weight: normal;
   font-style: normal;
 }
- .content .left-content{
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.header {
+  width: 90%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
   align-items: center;
-  width: 30%;
-  
+  padding-bottom: 40px;
 }
 
-.content .right-content{
+.header h1 {
+  font-family: Bronkoh;
+  font-size: 3.5rem;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.cronograma {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 40px;
+  padding-bottom: 60px ;
+
+}
+
+.etapa {
+  display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
   align-items: center;
   width: 70%;
-}
-.content{
-  padding: 40px 0px;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  margin: 0 5%;
-  padding: 40px 0;
-}
-.cronograma {
-  display: flex;
-  width: 100%;
-  height: 800px;
-  flex-direction: column;
-  background-color: white;
-  background-image: url(../img/Ativo\ 1.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: nowrap;
+  height: auto;
+  padding: 20px 10px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 2px dashed rgb(87, 80, 213);
 }
 
-.cronograma .textos {
+.etapa:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);  
+}
+
+#etapa-atual{
+    border-color: #f19100;
+}
+
+#etapa-atual p{
+    font-weight: bold;
+}
+
+.bolinha {
   display: flex;
+  width: 30%;
+  height: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: center;
   align-content: center;
-  width: 100%;
-  padding-bottom: 100px;
-}
-
-.cronograma .textos h3,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-.cronograma .textos .titulo {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  flex-wrap: nowrap;
-  position: relative;
-  top: 210px;}
+}
 
-.cronograma .textos .descricao {
+.descricao {
   display: flex;
-  flex-direction: column;
-  width: 50%;
+  width: 70%;
   height: 100%;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: center;
+  flex-direction: column;
   flex-wrap: nowrap;
-  color: #666666;
-  gap: 10px;
-  margin-left: 200px;
-  position: relative;
-  top: 210px;
+  justify-content: center;
+  align-items: center;
 }
 
-.cronograma .textos h2 {
-  width: 80px;
-  font-family: "Bronkoh", sans-serif;
-  font-size: 70px;
-  color: #00a099;
-  margin-left: 130px;
-}
-
-.descricao h3 {
-  font-family: sans-serif;
-  font-weight: 800;
-  font-size: 24px;
-}
-
-.descricao p {
-  width: 400px;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.timeline {
-    padding: 40px;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+.text{
     width: 90%;
 }
 
-.circulos{
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-}
-
 .circle {
-  z-index: 1;
-  display: flex;
-  background: #00a099;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  z-index: 3;
-}
-
-.center-line{
-  display: flex;
-  position: relative;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-
-}
-
-
-#Active-Circle {
   width: 200px;
   height: 200px;
-  background-image: url(../img/Ativo\ 3.svg);
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: center;
-}
-
-  #Active-Circle:hover {
-    background-color: #f19100;
-  }
-
-  .timeline .years{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50%;
-    position: relative;
-    
-  }
-
-  .years p{
-    width: 80px;
-    font-family: "Bronkoh", sans-serif;
-    font-size: 30px;
-    color: #00a099;
-  }
-
-  .linha-horizontal{
-    display: flex;
-    width: 100%;
-    height: 10px;
-    background-color: #92c01f;
-    z-index: 2;
-    position: absolute;
-    top: 1410px;
-  }
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.bolinhas {
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
-  background-color: #3498db;
-  cursor: pointer;
-  transition: transform 0.2s; 
-  
-  
-}
-.bolinhas:hover {
-  transform: scale(1.4);
-  background-color: #f19100;
 }
 
-.bolinhas.large {
-  transform: scale(1.2);
+#blue{
+    background-color: #3498db;
+}
+#orange{
+    background-color: #f19100;
 }
 
-.bolinhas.selected {
-  border: 2px solid #ff0000; /* Adicionamos uma borda vermelha para indicar a seleção */
+#left{
+    flex-direction: row-reverse;
 }
 
+@media (max-width: 768px){
+    .etapa{
+        flex-direction: column;
+    }
 
-#texto {
-    margin-top: 20px;
-    font-size: 18px;
+    .bolinha{
+        width: 100%;
+    }
+
+    .circle{
+        width: 150px;
+        height: 150px;
+    }
+
+    .descricao{
+        width: 100%;
+    }
+
+    #left{
+        flex-direction: column;
+    }
 }

@@ -51,7 +51,7 @@ body {
   align-items: center;
   width: 90%;
   gap: 40px;
-  padding-bottom: 40px ;
+  padding-bottom: 60px ;
 
 }
 
@@ -120,6 +120,10 @@ body {
     background-color: #f19100;
 }
 
+#left{
+    flex-direction: row-reverse;
+}
+
 @media (max-width: 768px){
     .etapa{
         flex-direction: column;
@@ -136,5 +140,9 @@ body {
 
     .descricao{
         width: 100%;
+    }
+
+    #left{
+        flex-direction: column;
     }
 }
