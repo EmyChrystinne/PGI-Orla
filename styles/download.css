@@ -55,6 +55,7 @@ body {
     text-decoration: none;
   }
   .botao-download a{
+    text-decoration: none;
     gap: 30px;
     display: flex;
     flex-direction: column;
@@ -68,16 +69,18 @@ body {
   }
 
   .botao-download a:hover{
-    background-color: orange;
-    color: white;
+    color: orange;
+    
     text-decoration: none;
   }
 
   .botao-download ul{
-    text-align: center;
+
+    
     text-align: start;
-    padding: 0;
+    padding: 0 30px;
     margin: 0;
+    text-decoration: none;
   }
 
   @media (max-width: 768px){
