@@ -105,7 +105,7 @@ body {
   height: 800px;
   flex-direction: column;
   background-color: white;
-  background-image: url(../img/Ativo\ 1.png);
+  background-image: url(../img/cronograma.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -356,7 +356,9 @@ p {
   .center-line{
     bottom: 0;
   }
-
+.cronograma{
+  background-size: 100%;
+}
 
 
   .cronograma .textos {
