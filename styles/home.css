@@ -287,6 +287,28 @@ p {
     border: #00a099 dashed 2px;
   }
 
+
+  #programa{
+    display: flex;
+    height: 50px;
+    flex-direction: column;
+    background-color: #f19100;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    border-radius: 20px;
+    width: 300px;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-top: 10px;
+    line-height: 30px;
+  }
+
+  #programa:hover{
+    background-color: #00a099;
+  }
 /* @media (max-width: 1463px) {
 
   
