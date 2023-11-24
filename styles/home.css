@@ -348,6 +348,27 @@ p {
   .banner .textos {
     padding-top: 40px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner .textos h2 {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .banner .textos p {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  #programa{
+    margin-top: 40px;
+    margin-left: 0;
   }
 
   .timeline {
@@ -384,7 +405,8 @@ p {
   background-color: white;
   background-position: top;
   background-repeat: no-repeat;
-  margin-top: 100px;
+  margin-top: 150px;
+
 }
 
 
