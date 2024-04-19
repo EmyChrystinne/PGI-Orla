@@ -105,7 +105,7 @@ body {
   height: 800px;
   flex-direction: column;
   background-color: white;
-  background-image: url(../img/cronograma-horizontal.svg);
+  background-image: url(../img/cronograma-horizontal4.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -400,7 +400,7 @@ p {
     bottom: 0;
   }
 .cronograma{
-  background-image: url(../img/cronograma-vertical.svg);
+  background-image: url(../img/cronograma-vertical4.svg);
   background-size:cover;
   background-color: white;
   background-position: top;
