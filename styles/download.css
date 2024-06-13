@@ -42,7 +42,7 @@ body {
   .botao-download {
     padding: 20px 0px;
     width: 300px;
-    height: 300px;
+    height: 320px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
